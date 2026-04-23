@@ -13,7 +13,7 @@ namespace Bookstore
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer("Server=.;Database=BookStoreDB;Trusted_Connection=True;");
+            options.UseSqlServer("Server=.;Database=BookStoreDB;Trusted_Connection=True;TrustServerCertificate=True;");
         }
     } 
     #endregion
